@@ -14,6 +14,9 @@
     // add something dynamic to make sure the video is unique when uploaded to YouTube
     document.write("Created by Web2Video on " + new Date().toString());
 
+    // start video capture
+    w2v.start();
+
     setTimeout(function () {
       // stop video capture (after 10 seconds)
       w2v.finish();
