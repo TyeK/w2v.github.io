@@ -1,1 +1,3 @@
 name: Web2Video
+gems:
+  - jekyll-assets
