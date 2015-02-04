@@ -14,10 +14,16 @@ title: Documentation and Examples
   <p>Web2Video can be used to generate videos from web pages. Visit <a href="http://w2v.inherentvalue.com/">the site</a>
     to sign up.</p>
 
-  <p>Once you have confirmed your account, you can visit your dashboard. You should generate an API key
-    <img src="images/generate_api_key.png" alt="" valign="middle" />
-    authenticate your YouTube account then you can queue tasks that produce videos.</p>
+  <p>Once you have confirmed your account, you can visit your dashboard. You should then:</p>
 
+  <ul>
+    <li style="margin-bottom: 1em;">Generate an API key by clicking the
+    <img src="images/generate_api_key.png" alt="" valign="middle" /> button.
+    </li>
+    <li>Authenticate your YouTube account using the
+      <img src="images/authorize_youtube.png" alt="" valign="middle" />
+      button then you can begin to produce videos.</li>
+  </ul>
   <h3>
     <a id="creating-first-video" class="anchor" href="#creating-first-video" aria-hidden="true">
       <span class="octicon octicon-link"></span>
@@ -25,18 +31,19 @@ title: Documentation and Examples
     Creating Your First Video
   </h3>
 
-  <ul>
+  <ol class="your-first-video">
     <li>
-      Click the <b> Create new video </b> button.
-      <img src="images/create_video.png" alt="" style="float: right;" />
+      Click the <img src="images/create_video.png" alt="" valign="middle" /> button.
     </li>
     <li>Select the first item in the <b>Upload to</b> dropdown.<br />
       <i>(this is the ID from YouTube representing your account)</i></li>
     <li>In the <b>URL</b> box, copy and paste the link below:<br />
-      <b>http://w2v.github.io/examples/hello_world</b></li>
-    <li>Leave all other options at their default and click <b>Create Task</b></li>
+      <input id="copy_link_box" type="text" value="http://w2v.github.io/examples/hello_world" size="40"
+             readonly="readonly" style="text-align: center;" /></li>
+    <li>Leave all other options at their defaults.</li>
+    <li>Click the <img src="images/create_video.png" alt="" valign="middle" /> button.</li>
     <li>Your video will be created soon!</li>
-  </ul>
+  </ol>
 
   <h3>
     <a id="adapting-examples" class="anchor" href="#adapting-examples" aria-hidden="true">
