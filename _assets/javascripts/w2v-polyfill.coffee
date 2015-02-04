@@ -1,6 +1,3 @@
----
----
-
 console.log "W2V #{'not ' unless window.w2v?}loaded"
 
 w2v_msg = (msg) ->
