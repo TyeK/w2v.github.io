@@ -1,3 +1,3 @@
 $ ->
-  $( "#copy_link_box" ).live 'focus', ->
+  $( "#copy_link_box" ).on 'focus', ->
     $(this).select()
