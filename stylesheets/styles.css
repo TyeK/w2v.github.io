@@ -354,6 +354,6 @@ footer p + p {
     content: 'at http://github.com/';
   }
 }
-ol.your-first-video li {
+.step-by-step li {
   margin-bottom: 1em;
 }

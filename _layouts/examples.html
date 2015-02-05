@@ -6,6 +6,7 @@
   <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="/stylesheets/examples.css">
 
   {% javascript scale.fix %}
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,7 +19,10 @@
   <![endif]-->
 </head>
 <body>
-<header>&lsaquo;&lsaquo; <a href="/examples">Back</a></header>
+<header>
+  <span style="position: absolute;">&lsaquo;&lsaquo; <a href="/examples">Back</a></span>
+  <h2 align="center">{{ page.title }}</h2>
+</header>
 {{ content }}
 <footer>
 
