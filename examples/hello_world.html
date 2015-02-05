@@ -1,29 +1,24 @@
 ---
+layout: examples
+title: Examples - Basic - Hello, World!
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Web2Video - Hello, World</title>
-  <meta name="description" content="Web2Video example - Hello, world">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- This script prevents errors when a browser is viewing your page with embedded W2V calls -->
-  {% javascript w2v-polyfill %}
+{% comment %}
+{% jsfiddle 120jv3ov js,resources,html,css,result %}
+{% endcomment %}
+{% jsbin siqicipohu/3 html %}
 
-  <script type="text/javascript">
-
-    // add something dynamic to make sure the video is unique when uploaded to YouTube
-    document.write("Created by Web2Video on " + new Date().toString());
-
-    setTimeout(function () {
-      // stop video capture (after 10 seconds)
-      w2v.finish();
-    }, 10000);
-
-  </script>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-</body>
-</html>
+<h3>To Create Your Video</h3>
+<p>From your dashboard:</p>
+<ol>
+  <li>
+    Click the <img src="/images/create_video.png" alt="" valign="middle" /> button.
+  </li>
+  <li>Select the first item in the <b>Upload to</b> dropdown. <i>(this is the ID from YouTube representing your account)</i></li>
+  <li>In the <b>URL</b> box, copy and paste the link below:
+    <input class="copy_link_box" type="text" value="http://jsbin.com/siqicipohu/3" size="35"
+           readonly="readonly" style="text-align: center;" /></li>
+  <li>Leave all other options at their defaults.</li>
+  <li>Click the <img src="/images/create_task.png" alt="" valign="middle" /> button.</li>
+  <li>Your video will be created soon!</li>
+</ol>
